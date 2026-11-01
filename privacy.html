@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика конфиденциальности — Ремонт Калькулятор</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #05060a; --bg-2: #0b0e17; --glass: rgba(255, 255, 255, 0.06); --glass-border: rgba(255, 255, 255, 0.10);
+    --text: #f5f5f7; --muted: #8e8e93; --accent: #6366f1; --accent-2: #a855f7; --radius: 24px; --shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { color-scheme: dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(1200px 600px at 20% -10%, rgba(99, 102, 241, 0.18), transparent 60%), radial-gradient(900px 500px at 90% 10%, rgba(168, 85, 247, 0.14), transparent 60%), linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    background-attachment: fixed; color: var(--text); line-height: 1.7; min-height: 100vh; padding: 40px 18px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 32px; }
+  .logo { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 20px; background: linear-gradient(145deg, rgba(99,102,241,0.9), rgba(168,85,247,0.9)); margin-bottom: 16px; box-shadow: 0 12px 40px rgba(99, 102, 241, 0.45); }
+  .logo svg { width: 30px; height: 30px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  h1 { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; background: linear-gradient(180deg, #fff 0%, #b8b8c0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); backdrop-filter: blur(30px); margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin: 24px 0 12px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  h2:first-child { margin-top: 0; }
+  h2 svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  p { margin-bottom: 14px; color: #b0b0b8; font-size: 0.95rem; }
+  ul { margin: 0 0 16px 20px; color: #b0b0b8; font-size: 0.95rem; }
+  li { margin-bottom: 8px; }
+  .highlight { background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 14px; padding: 18px; margin: 20px 0; font-size: 0.92rem; color: #e0e0e6; }
+  .highlight strong { color: #a5b4fc; }
+  .nav-links { text-align: center; margin-top: 30px; }
+  .nav-links a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 999px; text-decoration: none; font-size: 0.9rem; font-weight: 500; color: var(--muted); background: var(--glass); border: 1px solid var(--glass-border); transition: all 0.2s; margin: 0 4px; }
+  .nav-links a:hover { color: var(--text); background: rgba(255,255,255,0.1); }
+  footer { text-align: center; color: #55555f; font-size: 0.78rem; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <h1>Политика конфиденциальности</h1>
+  </header>
+
+  <div class="card">
+    <p>Настоящая Политика конфиденциальности описывает, как сайт <strong>Ремонт Калькулятор</strong> (далее — «Сайт») собирает, использует и защищает информацию, которую вы предоставляете при использовании наших инструментов.</p>
+
+    <h2><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> 1. Какую информацию мы собираем</h2>
+    <p>Мы уважаем вашу конфиденциальность и стараемся собирать минимум данных:</p>
+    <ul>
+      <li><strong>Данные калькуляторов:</strong> введённые вами числа (площадь, слои и т.д.) обрабатываются локально в вашем браузере и никуда не передаются.</li>
+      <li><strong>Аналитика:</strong> мы можем использовать анонимные счётчики (например, Яндекс.Метрику) для понимания того, сколько людей заходит на сайт и какие страницы популярны.</li>
+      <li><strong>Cookies:</strong> небольшие файлы, которые помогают сайту запоминать ваши настройки и показывать релевантную рекламу.</li>
+    </ul>
+
+    <h2><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 0 1 9-9"/></svg> 2. Использование файлов Cookie</h2>
+    <p>Сайт использует файлы cookie для:</p>
+    <ul>
+      <li>Обеспечения корректной работы интерфейса.</li>
+      <li>Сбора анонимной статистики посещаемости.</li>
+      <li>Показа рекламных материалов (в будущем).</li>
+    </ul>
+    <p>Вы можете отключить cookies в настройках вашего браузера, но это может повлиять на работу некоторых функций.</p>
+
+    <div class="highlight">
+      <strong>Важно:</strong> Мы не продаём, не обмениваем и не передаём ваши личные данные третьим лицам. Всё, что вы вводите в калькуляторы, остаётся только в вашем браузере.
+    </div>
+
+    <h2><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg> 3. Реклама и партнёрские программы</h2>
+    <p>В будущем на Сайте может отображаться реклама (например, от Рекламной сети Яндекса) и партнёрские ссылки на магазины. Переход по таким ссылкам может привести к тому, что сторонние сервисы получат информацию о вас в соответствии со своими политиками конфиденциальности.</p>
+
+    <h2><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> 4. Безопасность</h2>
+    <p>Мы принимаем разумные меры для защиты Сайта, однако помните, что передача информации через интернет никогда не бывает на 100% безопасной.</p>
+
+    <h2><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> 5. Контакты</h2>
+    <p>Если у вас есть вопросы о данной Политике, вы можете связаться с нами по адресу электронной почты: <strong>vlmr909000@example.com</strong></p>
+
+    <p style="margin-top:24px; font-size:0.85rem; color:#777;"><em>Последнее обновление: 01.11.2026</em></p>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">← Вернуться на главную</a>
+    <a href="about.html">О сайте</a>
+  </div>
+
+  <footer>© 2026 Ремонт Калькулятор. Все права защищены.</footer>
+</div>
+</body>
+</html>
