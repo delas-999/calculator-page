@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О сайте — Ремонт Калькулятор</title>
+<style>
+  :root {
+    --bg: #05060a; --bg-2: #0b0e17; --glass: rgba(255, 255, 255, 0.06); --glass-border: rgba(255, 255, 255, 0.10);
+    --text: #f5f5f7; --muted: #8e8e93; --accent: #30d158; --accent-2: #0a84ff; --radius: 24px; --shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { color-scheme: dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(1200px 600px at 20% -10%, rgba(48, 209, 88, 0.14), transparent 60%), radial-gradient(900px 500px at 90% 10%, rgba(10, 132, 255, 0.14), transparent 60%), linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    background-attachment: fixed; color: var(--text); line-height: 1.7; min-height: 100vh; padding: 40px 18px; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 32px; }
+  .logo { display: inline-flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 20px; background: linear-gradient(145deg, rgba(48,209,88,0.9), rgba(10,132,255,0.9)); margin-bottom: 16px; box-shadow: 0 12px 40px rgba(48, 209, 88, 0.4); }
+  .logo svg { width: 30px; height: 30px; stroke: #fff; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  h1 { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.03em; background: linear-gradient(180deg, #fff 0%, #b8b8c0 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); backdrop-filter: blur(30px); margin-bottom: 24px; }
+  h2 { font-size: 1.15rem; margin: 24px 0 12px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  h2:first-child { margin-top: 0; }
+  h2 svg { width: 20px; height: 20px; stroke: var(--accent); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  p { margin-bottom: 14px; color: #b0b0b8; font-size: 0.95rem; }
+  ul { margin: 0 0 16px 20px; color: #b0b0b8; font-size: 0.95rem; }
+  li { margin-bottom: 8px; }
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+  .feature-item { background: rgba(255,255,255,0.04); border: 1px solid var(--glass-border); border-radius: 14px; padding: 16px; font-size: 0.88rem; color: #b0b0b8; }
+  .feature-item strong { color: var(--text); display: block; margin-bottom: 4px; }
+  .highlight { background: rgba(48, 209, 88, 0.08); border: 1px solid rgba(48, 209, 88, 0.3); border-radius: 14px; padding: 18px; margin: 20px 0; font-size: 0.92rem; color: #e0e0e6; }
+  .highlight strong { color: #6ee7a0; }
+  .nav-links { text-align: center; margin-top: 30px; }
+  .nav-links a { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 999px; text-decoration: none; font-size: 0.9rem; font-weight: 500; color: var(--muted); background: var(--glass); border: 1px solid var(--glass-border); transition: all 0.2s; margin: 0 4px; }
+  .nav-links a:hover { color: var(--text); background: rgba(255,255,255,0.1); }
+  footer { text-align: center; color: #55555f; font-size: 0.78rem; margin-top: 30px; }
+  @media (max-width: 480px) { .features { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+    </div>
+    <h1>О нашем сайте</h1>
+  </header>
+
+  <div class="card">
+    <p>Добро пожаловать на <strong>Ремонт Калькулятор</strong> — бесплатный инструмент, созданный для того, чтобы избавить вас от головной боли при планировании ремонта.</p>
+
+    <h2><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> Наша цель</h2>
+    <p>Мы устали от ситуаций, когда купленной краски не хватает на последний метр стены, а обоев — на пол-рулона. Наш сайт помогает точно рассчитать количество материалов, чтобы вы не переплачивали и не бегали лишний раз в магазин.</p>
+
+    <div class="features">
+      <div class="feature-item">
+        <strong>🎨 Краска</strong>
+        Расчёт литров с учётом слоёв и расхода.
+      </div>
+      <div class="feature-item">
+        <strong>🧱 Обои</strong>
+        Расчёт рулонов с учётом раппорта узора.
+      </div>
+    </div>
+
+    <h2><svg viewBox="0 0 24 24"><path d="M12 2v4"/><path d="m16.24 7.76-2.83 2.83"/><path d="M18 12h4"/><path d="m16.24 16.24-2.83-2.83"/><path d="M12 18v4"/><path d="m7.76 16.24 2.83-2.83"/><path d="M6 12H2"/><path d="m7.76 7.76 2.83 2.83"/></svg> Почему это удобно</h2>
+    <ul>
+      <li><strong>Бесплатно:</strong> все калькуляторы доступны без регистрации и оплаты.</li>
+      <li><strong>Быстро:</strong> результат появляется мгновенно, прямо в браузере.</li>
+      <li><strong>Безопасно:</strong> данные никуда не отправляются, всё считается на вашем устройстве.</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Обратите внимание:</strong> наши калькуляторы дают приблизительные значения. Точный расход зависит от типа поверхности, инструмента и техники нанесения. Всегда берите материалы с небольшим запасом (5–10%).
+    </div>
+
+    <h2><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Связь с нами</h2>
+    <p>Если у вас есть предложения по улучшению сайта, нашли ошибку или хотите добавить новый калькулятор — напишите нам на почту: <strong>vlmr909000@example.com</strong></p>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">← Вернуться на главную</a>
+    <a href="privacy.html">Политика конфиденциальности</a>
+  </div>
+
+  <footer>© 2026 Ремонт Калькулятор. Все права защищены.</footer>
+</div>
+</body>
+</html>
